@@ -1,0 +1,220 @@
+.contact-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height:100vh;
+    padding:80px 10px;
+}
+.contact-container h1 {
+    color:black;
+    padding: 30px 0px;
+    font-size: 80px;
+    color:white;
+}
+.contact-wrapper {
+    display:flex;
+    /* justify-content: center; */
+    align-items: start;
+    gap:50px;
+}
+.mail-about {
+    width:450px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    color:white;
+}
+.mail-about h1 {
+    color:white;
+    font-size: 40px;
+}
+.mail-about p {
+    line-height: 1.5;
+}
+.address-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap:20px;
+}
+.contact-info {
+    display:flex ;
+    justify-content: start;
+    align-items: start;
+    width:300px;
+    gap:30px;
+    color:white;
+}
+.contact-info h2 {
+    font-size: 30px;
+}
+.contact-info p {
+    line-height: 1.5;
+}
+.contact-info i {
+    font-size: 25px;
+    color:crimson;
+}
+.contact-details {
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+.icon-contact a {
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+}
+.icon-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.icon-contact a i {
+    padding:10px;
+    background-color:rgba(0, 0, 0, 0.58);
+    border-radius: 50%;
+}
+.name-form input {
+    display: block!important;
+    width:50%;
+    height:50px;
+    padding:10px 30px;
+    border-radius: 50px;
+    font-size: 16px;
+    outline: crimson;
+    border: none;
+}
+.name-form input:focus,textarea:focus {
+    border:2px solid crimson;
+}
+.name-form {
+    width:100%;
+    display: flex;
+    padding:10px 0px;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}
+form button {
+    display: block;
+}
+form {
+    width:600px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+}
+textarea {
+    width:100%;
+    border-radius: 20px;
+    height:200px;
+    padding:20px 10px;
+    font-size: 20px;
+    outline: crimson;
+    border: none;
+}
+form button {
+    padding: 20px 30px;
+    background-color: crimson;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    transition: all 1s;
+    font-size: 1.2rem;
+    border:none;
+    margin-top: 10px;
+    text-align: start;
+    cursor: pointer;
+}
+form button:hover {
+    letter-spacing: 2px;
+}
+::placeholder {
+    font-size: 20px;
+    padding-right:20px;
+}
+.icon-contact a i:hover {
+    background-color: crimson;
+}
+
+
+@media screen and (min-width:300px) and (max-width:500px) {
+    .contact-wrapper {
+        flex-direction: column;
+        padding:10px;
+    }
+    form {
+        width:100%;
+        padding:10px;
+    }
+    .contact-container {
+        padding:80px 0px
+    }
+    .contact-container h1 {
+        font-size: 41px;
+    }
+    .mail-about {
+        width:100%;
+        padding:10px;
+    }
+    .mail-about h1 {
+        font-size: 27px;
+    }
+    .contact-info p {
+        font-size: 15px;
+    }
+    ::placeholder {
+        font-size: 13px;
+    }
+}
+@media screen and (min-width:500px) and (max-width:800px) {
+    .contact-wrapper {
+        flex-direction: column;
+        padding:10px;
+    }
+    form {
+        width:100%;
+        padding:10px;
+    }
+    .contact-container {
+        padding:80px 0px
+    }
+    .contact-container h1 {
+        font-size: 41px;
+    }
+    .mail-about {
+        width:100%;
+        padding:10px;
+    }
+    .mail-about h1 {
+        font-size: 27px;
+        text-align: center;
+        padding:0px;
+    }
+    .contact-info p {
+        font-size: 15px;
+    }
+    ::placeholder {
+        font-size: 17px;
+    }
+    .address-contact {
+        align-items: center;
+    }
+    .contact-info {
+        width:400px;
+    }
+}
+@media screen and (min-width:800px) and (max-width:1200px) {
+    form {
+        width:100%;
+    }
+    .contact-wrapper {
+        gap:35px;
+    }
+}

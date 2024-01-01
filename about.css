@@ -1,0 +1,212 @@
+.about-me h2 {
+  text-align: center;
+  font-size: 80px;
+  padding-top: 150px;
+  color: white;
+}
+.personal-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 5px solid crimson;
+  padding: 30px 0px;
+}
+.personal-info h1 {
+  color: crimson;
+  padding-top: 20px;
+}
+.info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 30px;
+  padding: 30px 0px;
+  padding: 30px;
+  height: 350px;
+}
+.info-box h3 {
+  color: lightseagreen;
+  font-size: 25px;
+}
+.info-box h3 span {
+  color: thistle;
+}
+.info-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding: 30px 0px;
+}
+.address {
+  width: 400px;
+  /* text-align: center; */
+}
+.personal-info a {
+  padding: 20px 30px;
+  background-color: crimson;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  transition: all 1s;
+  font-size: 1.2rem;
+}
+.personal-info a i {
+  padding-left: 10px;
+}
+.personal-info a:hover {
+  letter-spacing: 3px;
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
+}
+.skills h1 {
+  font-size: 80px;
+  color: white;
+}
+.skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding:50px 10px;
+  flex-wrap: wrap;
+  /* text-transform: uppercase; */
+}
+.skill-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:rgb(32, 76, 46);
+  color: white;
+  padding: 20px 30px;
+  border-radius: 20px;
+  gap: 20px;
+  box-shadow:8px 8px 10px black,-8px -8px 10px black;
+    transition: all 1s;
+}
+.skill-box img {
+  height: 100px;
+  width: 100px;
+}
+.skill-box:hover {
+    background-color: azure;
+    color:black
+}
+.education-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:30px;
+  padding:50px 20px;
+}
+.education-container h1 {
+  font-size: 80px;
+  color:white;
+}
+.education-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:50px;
+}
+.education-box {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  gap:30px;
+  width:500px;
+  text-align: center;
+}
+.education-box h1 {
+  font-size: 30px;
+  color:crimson;
+}
+.education-box h2 {
+ color:white;
+ font-size: 20px;
+}
+.education-container p {
+  font-size: 20px;
+  color:gray;
+}
+@media screen and (min-width: 300px) and (max-width: 500px) {
+  .about-me h2 {
+    font-size: 50px;
+  }
+  .info-wrapper {
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px 10px 0px 10px;
+    justify-content: start;
+    align-items: start;
+  }
+  .info-box {
+    padding: unset;
+    height: 250px;
+  }
+  .address {
+    width: unset;
+  }
+  .info-box h3 {
+    font-size: 17px;
+  }
+  .skills h1 {
+    font-size: 50px;
+  }
+  .education-container h1 {
+    font-size: 50px;
+  }
+  .education-box {
+    width:100%;
+  }
+  .education-wrapper {
+    flex-direction: column;
+  }
+  .education-box h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  .info-wrapper {
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px 10px;
+    justify-content: start;
+    align-items: start;
+  }
+  .info-box {
+    padding: unset;
+    height: 250px;
+  }
+  .address {
+    width: unset;
+  }
+  .education-wrapper {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+  .info-wrapper {
+    gap: unset;
+  }
+  .education-box {
+    width:100%;
+  }
+  .education-box h2 {
+    font-size: 15px;
+  }
+  .education-box h1 {
+    font-size: 23px;
+  }
+}
